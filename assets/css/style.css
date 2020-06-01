@@ -1,0 +1,176 @@
+
+@font-face {
+  font-family: 'Tenali Ramakrishna';
+  src: url('/assets/fonts/TenaliRamakrishna-Regular.ttf');
+}
+
+body {
+  margin: 0;
+  background-color: #24292e;
+  color: #fff;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 1.15rem;
+}
+
+body header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  height: 32px;
+  background-color: #1d1d1d;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+body main {
+  vertical-align: middle;
+  min-height: calc(100vh - 64px);
+}
+
+body footer {
+  height: 32px;
+}
+
+input[type=text], input[type=password] {
+  padding: 8px 16px;
+  font-size: 1.15rem;
+  border: 0;
+  border-radius: 8px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(49, 132, 132, 0.5);
+}
+
+button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #0d6efd;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+button.large {
+  padding: 12px 24px;
+}
+
+button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(49, 132, 253, 0.5);
+}
+
+button:disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.container {
+  margin: auto;
+  width: 75%;
+  padding: 24px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+.f1 {
+  font-size: 1.5rem;
+}
+
+.f2 {
+  font-size: 1.35rem;
+}
+
+.progress-group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.progress-group .progress-label {
+  margin-top: 8px;
+  font-size: 1.5rem;
+}
+
+.progress {
+  display: flex;
+  height: 24px;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.progress .progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 0%;
+  background-color: #007bff;
+  text-align: center;
+  transition: width 0.6s;
+  transition-timing-function: ease;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.form .form-group {
+  display: flex;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.form .form-group *:first-child {
+  margin: 0;
+  flex: 1;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 0;
+}
+
+.form .form-group *:last-child {
+  margin: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 8px;
+}
+
+#game {
+  display: none;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+#game .word-display {
+  font-size: 4rem;
+}
+
+#game .fail {
+  margin: 16px auto;
+  color: red;
+}
+
+#game .board {
+  display: flex;
+  margin-top: 32px;
+  justify-content: space-between;
+}
+
+#game .board div {
+  margin: 0 16px;
+}
+
+@media (max-width: 480px) {
+  #game { width: 75%; }
+}

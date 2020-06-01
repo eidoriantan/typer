@@ -1,0 +1,41 @@
+{
+  "name": "typer",
+  "version": "1.0.0",
+  "description": "Simple typing game for browsers",
+  "keywords": [
+    "node",
+    "browser",
+    "web",
+    "type",
+    "game"
+  ],
+  "homepage": "https://github.com/eidoriantan/typer#readme",
+  "bugs": {
+    "url": "https://github.com/eidoriantan/typer/issues"
+  },
+  "license": "GPL-3.0-only",
+  "author": {
+    "name": "Adriane Justine Tan",
+    "email": "eidoriantan@gmail.com",
+    "url": "https://eidoriantan.github.io"
+  },
+  "contributors": [],
+  "funding": {
+    "type": "patreon",
+    "url": "https://patreon.com/eidoriantan"
+  },
+  "directories": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eidoriantan/typer.git"
+  },
+  "scripts": {
+    "serve": "serve -u"
+  },
+  "dependencies": {
+    "an-array-of-english-words": "^2.0.0",
+    "jquery": "^3.5.1",
+    "serve": "^11.3.1"
+  },
+  "devDependencies": {}
+}

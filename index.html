@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="keywords" content="node, browser, web, type, game">
+
+  <link href="/LICENSE.txt" rel="license">
+  <link href="/site.webmanifest" rel="manifest">
+  <link href="/assets/css/normalize.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/assets/js/game.js"></script>
+
+  <title>Typer</title>
+</head>
+
+<body>
+  <header>
+    <span>Typer</span>
+  </header>
+
+  <main>
+    <div id="initial-loading" class="container">
+      <div class="progress-group">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemax="100">0%</div>
+        </div>
+        <span class="progress-label">Loading dictionary file...</span>
+      </div>
+    </div>
+
+    <div id="game" class="container">
+      <form id="submit-form" action="#" method="GET" class="form">
+        <div id="word" class="word-display">Typer</div>
+        <button id="start" type="button" class="center large">Start new game</button>
+
+        <div class="form-group">
+          <input id="word-input" type="text" value="" disabled>
+          <button type="submit" disabled>Enter</button>
+        </div>
+      </form>
+
+      <div class="fail"></div>
+
+      <div class="board">
+        <div class="f1">Score: <span id="score" class="f2">0</span> words</div>
+        <div class="f1">Highscore: <span id="highscore" class="f2">0</span> words</div>
+        <div class="f1">Timer: <span id="timer" class="f2">25</span> seconds</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
