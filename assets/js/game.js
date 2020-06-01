@@ -81,7 +81,7 @@ Game.prototype.stop = function () {
 }
 
 $(document).ready(function () {
-  $.ajax('/node_modules/an-array-of-english-words/index.json', {
+  $.ajax('http://unpkg.com/an-array-of-english-words/index.json', {
     xhr: function () {
       const xhr = new XMLHttpRequest()
       xhr.onprogress = function (event) {
