@@ -46,7 +46,6 @@ Game.prototype.next = function () {
 }
 
 Game.prototype.start = function () {
-  $('#timer').text('25')
   $('#start').toggle()
   $('#word-input').attr('disabled', null)
   $('#submit-form').find('button[type=submit]').attr('disabled', null)
@@ -67,6 +66,7 @@ Game.prototype.stop = function () {
   clearInterval(this.timer)
 
   $('#start').toggle()
+  $('#timer').text('25')
   $('#word').text('Typer')
   $('#word-input').val('').attr('disabled', true)
   $('#submit-form').find('button[type=submit]').attr('disabled', true)
