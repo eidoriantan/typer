@@ -1,5 +1,9 @@
 
 .DS_Store
 
-# Ignore Node-generated files
-node_modules/
+# Jekyll-generated files
+_site
+.sass-cache
+.jekyll-metadata
+
+Gemfile.lock

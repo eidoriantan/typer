@@ -32,6 +32,15 @@ body footer {
   height: 32px;
 }
 
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 input[type=text], input[type=password] {
   padding: 8px 16px;
   font-size: 1.15rem;
@@ -144,34 +153,4 @@ button:disabled {
   border-top-right-radius: 8px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 8px;
-}
-
-#game {
-  display: none;
-  margin: auto;
-  width: 50%;
-  text-align: center;
-}
-
-#game .word-display {
-  font-size: 4rem;
-}
-
-#game .fail {
-  margin: 16px auto;
-  color: red;
-}
-
-#game .board {
-  display: flex;
-  margin-top: 32px;
-  justify-content: space-between;
-}
-
-#game .board div {
-  margin: 0 16px;
-}
-
-@media (max-width: 480px) {
-  #game { width: 75%; }
 }

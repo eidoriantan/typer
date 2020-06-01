@@ -1,0 +1,32 @@
+
+@import url('/assets/css/normalize.css');
+
+#game {
+  display: none;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+#game .word-display {
+  font-size: 4rem;
+}
+
+#game .fail {
+  margin: 16px auto;
+  color: red;
+}
+
+#game .board {
+  display: flex;
+  margin-top: 32px;
+  justify-content: space-between;
+}
+
+#game .board div {
+  margin: 0 16px;
+}
+
+@media (max-width: 480px) {
+  #game { width: 75%; }
+}

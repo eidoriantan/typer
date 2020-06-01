@@ -1,7 +1,9 @@
+---
+---
 {
     "name": "Typer",
     "short_name": "Typer",
-    "theme_color": "#2b594c",
-    "background_color": "#2b594c",
+    "theme_color": "{{ site.color }}",
+    "background_color": "{{ site.color }}",
     "display": "standalone"
 }

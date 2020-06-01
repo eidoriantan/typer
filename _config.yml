@@ -1,0 +1,19 @@
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+sass:
+  style: compressed
+
+author: Adriane Justine Tan
+email: eidoriantan@gmail.com
+
+tagline: Simple typing game for browsers
+color: "#24292e"
+
+plugins:
+  - jekyll-github-metadata
+  - jekyll-seo-tag
+  - jekyll-sitemap

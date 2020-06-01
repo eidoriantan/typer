@@ -81,13 +81,16 @@ Game.prototype.stop = function () {
 }
 
 $(document).ready(function () {
+  let filesize = 0
+  $.ajax('https://unpkg.com/an-array-of-english-words/index.json?meta', {
+    success: function (json) { filesize = json.size }
+  })
+
   $.ajax('https://unpkg.com/an-array-of-english-words/index.json', {
     xhr: function () {
       const xhr = new XMLHttpRequest()
       xhr.onprogress = function (event) {
-        if (!event.lengthComputable) return
-
-        const percent = Math.floor(event.loaded / event.total * 100)
+        const percent = Math.floor(event.loaded / filesize * 100)
         const percentText = percent.toString() + '%'
         $('#initial-loading').find('.progress-bar')
           .width(percentText)
