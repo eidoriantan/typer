@@ -24,7 +24,7 @@ body header {
 
 body main {
   vertical-align: middle;
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 88px);
 }
 
 body footer {
