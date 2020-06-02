@@ -9,11 +9,8 @@
 
   <link href="{{ '/LICENSE.txt' | relative_url }}" rel="license">
   <link href="{{ '/site.webmanifest' | relative_url }}" rel="manifest">
-  <link href="{{ '/assets/css/default.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet">
-
-  {% seo title=false %}
-
   <link href="{{ '/assets/css/normalize.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/assets/css/default.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet">
   {% for style in page.styles %}
   <link href="{{ style | append: '?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet">
   {% endfor %}
@@ -22,6 +19,8 @@
   {% for script in page.scripts %}
   <script src="{{ script | append: '?v=' | append: site.github.build_revision | relative_url }}"></script>
   {% endfor %}
+
+  {% seo title=false %}
 
   <title>Typer</title>
 </head>
