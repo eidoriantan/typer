@@ -4,41 +4,41 @@
   src: url('/assets/fonts/TenaliRamakrishna-Regular.ttf');
 }
 
+* {
+  color: #fff;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+}
+
 body {
   margin: 0;
   background-color: #24292e;
-  color: #fff;
-  font-family: 'Tenali Ramakrishna', sans-serif;
   font-size: 1.15rem;
-}
 
-body > header {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  height: 32px;
-  background-color: #1d1d1d;
-  color: #fff;
-  font-size: 2rem;
-  text-align: center;
-}
+  & > header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #1d1d1d;
+    font-size: 2rem;
+    text-align: center;
+  }
 
-body > main {
-  position: relative;
-  min-height: calc(100vh - 104px);
-}
+  & > main {
+    position: relative;
+    min-height: calc(100vh - 97px);
 
-body > main > * {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+    & > * {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 
-body > footer {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  height: 32px;
-  text-align: center;
+  & > footer {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+  }
 }
 
 a {
@@ -52,6 +52,7 @@ a:hover {
 
 input[type=text], input[type=password] {
   padding: 8px 16px;
+  color: #000;
   font-size: 1.15rem;
   border: 0;
   border-radius: 8px;
@@ -67,9 +68,9 @@ button {
   padding: 8px 16px;
   background-color: #0d6efd;
   color: #fff;
+  font-size: 1.15rem;
   border: 0;
   border-radius: 8px;
-  font-size: 1.15rem;
   cursor: pointer;
   user-select: none;
 }
@@ -112,53 +113,54 @@ button:disabled {
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  .progress {
+    display: flex;
+    height: 24px;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    overflow: hidden;
+
+    .progress-bar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 0%;
+      background-color: #007bff;
+      transition: width 0.15s;
+      transition-timing-function: ease;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  .progress-label {
+    margin-top: 8px;
+    font-size: 1.5rem;
+  }
 }
 
-.progress-group .progress-label {
-  margin-top: 8px;
-  font-size: 1.5rem;
-}
+.form {
+  .form-group {
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
 
-.progress {
-  display: flex;
-  height: 24px;
-  border: 1px solid #fff;
-  border-radius: 12px;
-  overflow: hidden;
-}
+    & > *:first-child {
+      margin: 0;
+      flex: 1;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 0;
+    }
 
-.progress .progress-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 0%;
-  background-color: #007bff;
-  text-align: center;
-  transition: width 0.15s;
-  transition-timing-function: ease;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.form .form-group {
-  display: flex;
-  width: 100%;
-  margin-top: 8px;
-}
-
-.form .form-group *:first-child {
-  margin: 0;
-  flex: 1;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 0;
-}
-
-.form .form-group *:last-child {
-  margin: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 8px;
+    & > *:last-child {
+      margin: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 8px;
+    }
+  }
 }
