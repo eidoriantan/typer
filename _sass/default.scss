@@ -140,28 +140,26 @@ button:disabled {
   }
 }
 
-.form {
-  .form-group {
-    display: flex;
-    width: 100%;
-    margin-top: 8px;
-    border-radius: 8px;
+.form-group {
+  display: flex;
+  width: 100%;
+  margin-top: 8px;
+  border-radius: 8px;
 
-    & > * {
-      border-radius: 0;
-    }
+  & > * {
+    border-radius: 0;
+  }
 
-    & > *:first-child {
-      margin: 0;
-      flex: 1;
-      border-top-left-radius: inherit;
-      border-bottom-left-radius: inherit;
-    }
+  & > *:first-child {
+    margin: 0;
+    flex: 1;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+  }
 
-    & > *:last-child {
-      margin: 0;
-      border-top-right-radius: inherit;
-      border-bottom-right-radius: inherit;
-    }
+  & > *:last-child {
+    margin: 0;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
   }
 }
