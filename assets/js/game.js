@@ -23,6 +23,8 @@ Game.prototype.init = function () {
       } else {
         $('#game .fail').text('Incorrect word')
       }
+
+      $('#word-input').focus()
     }
   })
 
