@@ -3,7 +3,9 @@
 {
     "name": "Typer",
     "short_name": "Typer",
-    "theme_color": "{{ site.color }}",
+    "start_url": "./",
+    "display": "standalone",
+    "description": "{{ site.tagline }}",
     "background_color": "{{ site.color }}",
-    "display": "standalone"
+    "theme_color": "{{ site.color }}"
 }
