@@ -20,6 +20,10 @@ body {
     background-color: #1d1d1d;
     font-size: 2rem;
     text-align: center;
+
+    img {
+      vertical-align: middle;
+    }
   }
 
   & > main {
@@ -35,6 +39,8 @@ body {
   }
 
   & > footer {
+    display: flex;
+    flex-direction: column;
     padding-top: 8px;
     padding-bottom: 8px;
     text-align: center;
