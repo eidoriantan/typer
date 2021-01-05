@@ -101,11 +101,15 @@ Game.prototype.stop = function () {
 
 $(document).ready(function () {
   let filesize = 0
-  $.ajax('https://unpkg.com/an-array-of-english-words/index.json?meta', {
+  $.ajax('https://unpkg.com/an-array-of-english-words@2.0.0/index.json?meta', {
+    type: 'GET',
+    dataType: 'json',
     success: function (json) { filesize = json.size }
   })
 
-  $.ajax('https://unpkg.com/an-array-of-english-words/index.json', {
+  $.ajax('https://unpkg.com/an-array-of-english-words@2.0.0/index.json', {
+    type: 'GET',
+    dataType: 'json',
     xhr: function () {
       const xhr = new XMLHttpRequest()
       xhr.onprogress = function (event) {
