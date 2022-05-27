@@ -1,6 +1,6 @@
 /**
  *  Typer - Simple typing game for browser
- *  Copyright (C) 2020 - 2021, Adriane Justine Tan
+ *  Copyright (C) 2020 - 2022, Adriane Justine Tan
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
