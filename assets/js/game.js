@@ -29,18 +29,14 @@ function Game () {
 Game.prototype.init = function () {
   $('#submit-form').submit(event => {
     event.preventDefault()
+  })
 
+  $('#word-input').on('input', event => {
     if (this.started) {
       const word = $('#word').text()
       const input = $('#word-input').val()
 
-      if (word === input.toLowerCase()) {
-        $('#game .fail').text('')
-        this.next()
-      } else {
-        $('#game .fail').text('Incorrect word')
-      }
-
+      if (word === input.toLowerCase()) this.next()
       $('#word-input').focus()
     }
   })
@@ -62,7 +58,6 @@ Game.prototype.next = function () {
 Game.prototype.start = function () {
   $('#start').toggle()
   $('#word-input').attr('disabled', null).focus()
-  $('#submit-form').find('button[type=submit]').attr('disabled', null)
 
   this.score = -1
   this.started = true
@@ -83,7 +78,6 @@ Game.prototype.stop = function () {
   $('#timer').text('25')
   $('#word').text('Typer')
   $('#word-input').val('').attr('disabled', true)
-  $('#submit-form').find('button[type=submit]').attr('disabled', true)
 
   if (this.score > this.highscore) {
     this.highscore = this.score
