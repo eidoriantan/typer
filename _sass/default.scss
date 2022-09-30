@@ -31,9 +31,11 @@ body {
   background-color: #24292e;
   font-size: 1.15rem;
 
-  & > header {
-    padding-top: 12px;
-    padding-bottom: 12px;
+  & > .page-header {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: center;
     background-color: #1d1d1d;
     font-size: 2rem;
     text-align: center;
@@ -45,7 +47,7 @@ body {
 
   & > main {
     position: relative;
-    min-height: calc(100vh - 97px);
+    min-height: calc(100vh - 120px);
 
     & > * {
       position: absolute;
@@ -58,8 +60,7 @@ body {
   & > footer {
     display: flex;
     flex-direction: column;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    justify-content: center;
     text-align: center;
   }
 }
