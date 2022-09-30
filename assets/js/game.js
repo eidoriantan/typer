@@ -66,7 +66,7 @@ Game.prototype.next = function () {
 
 Game.prototype.start = function () {
   $('#start').toggle()
-  $('#word-input').attr('disabled', null)
+  $('#word-input').attr('disabled', null).focus()
   $('#submit-form').find('button[type=submit]').attr('disabled', null)
 
   this.score = -1
