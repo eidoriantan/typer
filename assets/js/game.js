@@ -44,11 +44,6 @@ Game.prototype.init = function () {
       $('#word-input').focus()
     }
   })
-
-  $('#submit-form').on('input', () => {
-    if (!this.started) this.start()
-    $('#game .fail').text('')
-  })
 }
 
 Game.prototype.next = function () {
