@@ -92,6 +92,7 @@ Game.prototype.stop = function () {
 
   if (this.score > this.highscore) {
     this.highscore = this.score
+    localStorage.setItem('highscore', this.highscore)
     $('#highscore').text(this.highscore)
   }
 
@@ -100,6 +101,9 @@ Game.prototype.stop = function () {
 }
 
 $(document).ready(function () {
+  const highscore = localStorage.getItem('highscore')
+  if (highscore !== null) $('#highscore').text(highscore)
+
   let filesize = 0
   $.ajax('https://unpkg.com/an-array-of-english-words@2.0.0/index.json?meta', {
     type: 'GET',
