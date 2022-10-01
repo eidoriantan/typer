@@ -97,6 +97,10 @@ button, .btn {
   border-radius: 8px;
   cursor: pointer;
   user-select: none;
+
+  &.btn-danger {
+    background-color: #dc3545;
+  }
 }
 
 button.large, .btn.large {
@@ -123,6 +127,10 @@ button:disabled, .btn:disabled {
     width: 90%;
     padding: 12px;
   }
+}
+
+.d-none {
+  display: none;
 }
 
 .f1 {
