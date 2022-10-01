@@ -58,6 +58,7 @@ Game.prototype.next = function () {
 Game.prototype.start = function () {
   $('#start').toggle()
   $('#word-input').attr('disabled', null).focus()
+  $('#submit-form').find('[type="reset"]').removeClass('d-none')
 
   this.score = -1
   this.started = true
@@ -78,6 +79,7 @@ Game.prototype.stop = function () {
   $('#timer').text('25')
   $('#word').text('Typer')
   $('#word-input').val('').attr('disabled', true)
+  $('#submit-form').find('[type="reset"]').addClass('d-none')
 
   if (this.score > this.highscore) {
     this.highscore = this.score
@@ -124,6 +126,7 @@ $(document).ready(function () {
       $('#initial-loading').hide()
       $('#game').show()
       $('#start').click(function () { game.start() })
+      $('#submit-form').find('[type="reset"]').click(function () { game.stop() })
     }
   })
 })
