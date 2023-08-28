@@ -14,8 +14,4 @@ through GitHub
 contribute to this repository and become a contributor, please refer to
 [CONTRIBUTING.md](https://github.com/eidoriantan/typer/blob/master/CONTRIBUTING.md).
 
-You can also show your support by becoming a patron!
-
-[![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/eidoriantan)
-
 [homepage]: https://typer.eidoriantan.me
